@@ -1,0 +1,11 @@
+
+3
+java:S1643“"Use a StringBuilder instead.(ŠÑ‡à
+V	java:S125"<This block of commented-out lines of code should be removed.(§¨Ö¿úÿÿÿÿ
+Z
+java:S2147%"DCombine this catch with the one at line 35, which has the same body.(ï­£Ä
+V	java:S125J"<This block of commented-out lines of code should be removed.(§¨Ö¿úÿÿÿÿ
+Z
+java:S2147Z"DCombine this catch with the one at line 88, which has the same body.(ï­£Ä
+V	java:S125"<This block of commented-out lines of code should be removed.(§¨Ö¿úÿÿÿÿ
+F	java:S106‰"+Replace this use of System.out by a logger.(Ñ£±Ôúÿÿÿÿ

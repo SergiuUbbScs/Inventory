@@ -92,12 +92,12 @@ public class Inventory {
     
     /**
      * Accepts search parameter and if an ID or name matches input, that part is returned
-     * @param searchItem
+     * @param searchPart
      * @return 
      */
-    public Part lookupPart(String searchItem) {
+    public Part lookupPart(String searchPart) {
         for(Part p:allParts) {
-            if(p.getName().contains(searchItem) || (p.getPartId()+"").equals(searchItem)) return p;
+            if(p.getName().contains(searchPart) || (p.getPartId()+"").equals(searchPart)) return p;
         }
         return null;
     }
