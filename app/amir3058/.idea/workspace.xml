@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b418264-718c-42eb-a050-6a9499df391c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Docs/Lab01/Lab01_ReviewReport.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Docs/Lab01/Lab01_ReviewReport.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="9b418264-718c-42eb-a050-6a9499df391c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +49,7 @@
       <workItem from="1710178495839" duration="1562000" />
       <workItem from="1710180783675" duration="6542000" />
       <workItem from="1710187428487" duration="42000" />
+      <workItem from="1710233730428" duration="691000" />
     </task>
     <servers />
   </component>

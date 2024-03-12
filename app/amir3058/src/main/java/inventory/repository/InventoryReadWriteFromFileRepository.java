@@ -8,12 +8,12 @@ import javafx.collections.ObservableList;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class InventoryRepository {
+public class InventoryReadWriteFromFileRepository {
 
 	private static String filename = "../../data/items.txt";
-	private Inventory inventory;
-	public InventoryRepository(){
-		this.inventory=new Inventory();
+	private InventoryRepository inventory;
+	public InventoryReadWriteFromFileRepository(){
+		this.inventory=new InventoryRepository();
 		readParts();
 		readProducts();
 	}
@@ -211,11 +211,11 @@ public class InventoryRepository {
 		writeAll();
 	}
 
-	public Inventory getInventory(){
+	public InventoryRepository getInventory(){
 		return inventory;
 	}
 
-	public void setInventory(Inventory inventory){
+	public void setInventory(InventoryRepository inventory){
 		this.inventory=inventory;
 	}
 }

@@ -4,14 +4,14 @@ package inventory.model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-public class Inventory {
+public class InventoryRepository {
     
     // Declare fields
     private ObservableList<Product> products;
     private ObservableList<Part> allParts;
     private int autoPartId;
     private int autoProductId;
-    public Inventory(){
+    public InventoryRepository(){
         this.products = FXCollections.observableArrayList();
         this.allParts= FXCollections.observableArrayList();
         this.autoProductId=0;
