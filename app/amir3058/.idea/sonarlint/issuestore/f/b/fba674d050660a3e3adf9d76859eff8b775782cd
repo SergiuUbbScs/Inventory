@@ -1,6 +1,14 @@
 
 3
 java:S1643“"Use a StringBuilder instead.(ŠÑ‡à
+j
+java:S2095‡"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ı8Ÿÿ¸ç1
+i
+java:S2095P"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦8Ÿÿ¸ç1
+i
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦8Ÿÿ¸ç1
+]
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(Êº‰o8í¾€¹ç1
 V	java:S125"<This block of commented-out lines of code should be removed.(§¨Ö¿úÿÿÿÿ
 Z
 java:S2147%"DCombine this catch with the one at line 35, which has the same body.(ï­£Ä

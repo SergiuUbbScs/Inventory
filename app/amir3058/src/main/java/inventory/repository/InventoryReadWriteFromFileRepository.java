@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 
 public class InventoryReadWriteFromFileRepository {
 
-	private static String filename = "../../data/items.txt";
+	private static String filename = "E:\\sem6\\VVSS\\labs\\Inventory\\app\\amir3058\\src\\main\\java\\data\\items.txt";
 	private InventoryRepository inventory;
 	public InventoryReadWriteFromFileRepository(){
 		this.inventory=new InventoryRepository();
