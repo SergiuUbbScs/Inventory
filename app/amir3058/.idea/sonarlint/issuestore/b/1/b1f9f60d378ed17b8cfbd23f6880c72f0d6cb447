@@ -1,8 +1,18 @@
 
-V	java:S125"<This block of commented-out lines of code should be removed.(îÌ¹üÿÿÿÿ
+Š
+java:S4165?"mRemove this useless assignment; "associatedParts" already holds the assigned value along all execution paths.(˜øÒ²8–ž†Òç1
+V	java:S125"<This block of commented-out lines of code should be removed.(îÌ¹üÿÿÿÿ
 Y
-java:S1854="CRemove this useless assignment to local variable "associatedParts".(˜øÒ²
+java:S1854?"CRemove this useless assignment to local variable "associatedParts".(˜øÒ²
 E
-java:S1656="/Remove or correct this useless self-assignment.(˜øÒ²
+java:S1656?"/Remove or correct this useless self-assignment.(˜øÒ²
+{
+java:S1158e"YCall the static method Integer.toString(...) instead of instantiating a temporary object.(ƒ®øÿÿÿÿÿ8§ž†Òç1
+C
+java:S2129e"!Remove this "Integer" constructor(ƒ®øÿÿÿÿÿ8©ž†Òç1
 j
-java:S5738c"HRemove this call to a deprecated method, it has been marked for removal.(ƒ®øÿÿÿÿÿ8Æ§Ñöâ1
+java:S5738e"HRemove this call to a deprecated method, it has been marked for removal.(ƒ®øÿÿÿÿÿ8Æ§Ñöâ1
+\
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ƒ·»Â8¶ž†Òç1
+Z
+java:S1128"=Remove this unused import 'javafx.collections.FXCollections'.(´¶²Æ8Òí×øë1

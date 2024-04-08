@@ -4,6 +4,8 @@ import inventory.model.*;
 import inventory.repository.InventoryReadWriteFromFileRepository;
 import javafx.collections.ObservableList;
 
+import java.util.Objects;
+
 public class InventoryService {
 
     private InventoryReadWriteFromFileRepository repo;
@@ -11,7 +13,21 @@ public class InventoryService {
         this.repo =repo;
     }
 
-    public void addInhousePart(String name, double price, int inStock, int min, int  max, int partDynamicValue){
+    public void addInhousePart(String name, double price, int inStock, int min, int  max, int partDynamicValue) throws Exception {
+        if(name == "")
+        {
+            throw new Exception();
+        }
+
+        if(price == 0)
+        {
+            throw new Exception();
+        }
+
+        if(price < 0 || price > 200)
+        {
+            throw new NumberFormatException("Price cannot be negative");
+        }
         InhousePart inhousePart = new InhousePart(repo.getAutoPartId(), name, price, inStock, min, max, partDynamicValue);
         repo.addPart(inhousePart);
     }

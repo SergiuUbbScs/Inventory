@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b418264-718c-42eb-a050-6a9499df391c" name="Changes" comment="" />
+    <list default="true" id="9b418264-718c-42eb-a050-6a9499df391c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Docs/Lab02/Lab02_BBT_TCs_Form.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Docs/Lab02/Lab02_BBT_TCs_Form.xlsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="E:\sem6\VVSS\labs\Inventory\app\coverage_report" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,11 +42,11 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "E:/sem6/VVSS/labs/Inventory/app/amir3058",
+    "last_opened_file_path": "E:/sem6/VVSS/labs/Inventory/app/coverage_report",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -53,10 +58,43 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="inventory.model" />
       <recent name="inventory.service" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.InventoryRepositoryTest">
+    <configuration name="InventoryRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amir3058" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inventory.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inventory.model" />
+      <option name="MAIN_CLASS_NAME" value="inventory.model.InventoryRepositoryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryRepositoryTest.lookupProductEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amir3058" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inventory.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inventory.model" />
+      <option name="MAIN_CLASS_NAME" value="inventory.model.InventoryRepositoryTest" />
+      <option name="METHOD_NAME" value="lookupProductEmptyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InventoryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="amir3058" />
       <extension name="coverage">
@@ -72,9 +110,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InventoryServiceTest.TC2_ECP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amir3058" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inventory.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inventory.service" />
+      <option name="MAIN_CLASS_NAME" value="inventory.service.InventoryServiceTest" />
+      <option name="METHOD_NAME" value="TC2_ECP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceTest.TC7_BVA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amir3058" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inventory.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inventory.service" />
+      <option name="MAIN_CLASS_NAME" value="inventory.service.InventoryServiceTest" />
+      <option name="METHOD_NAME" value="TC7_BVA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.InventoryRepositoryTest" />
+      <item itemvalue="JUnit.InventoryRepositoryTest.lookupProductEmptyList" />
+      <item itemvalue="JUnit.InventoryServiceTest" />
+      <item itemvalue="JUnit.InventoryServiceTest.TC2_ECP" />
+      <item itemvalue="JUnit.InventoryServiceTest.TC7_BVA" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InventoryRepositoryTest" />
+        <item itemvalue="JUnit.InventoryRepositoryTest.lookupProductEmptyList" />
         <item itemvalue="JUnit.InventoryServiceTest" />
+        <item itemvalue="JUnit.InventoryServiceTest.TC2_ECP" />
+        <item itemvalue="JUnit.InventoryServiceTest.TC7_BVA" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +178,8 @@
       <workItem from="1711315096632" duration="1890000" />
       <workItem from="1711392622038" duration="1070000" />
       <workItem from="1711395202537" duration="1304000" />
+      <workItem from="1711448091675" duration="2307000" />
+      <workItem from="1712600278243" duration="3554000" />
     </task>
     <servers />
   </component>
@@ -113,5 +196,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/amir3058$InventoryRepositoryTest.ic" NAME="InventoryRepositoryTest Coverage Results" MODIFIED="1712603237232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>inventory.model.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,4 +1,11 @@
 
-P	java:S107,"<Method has 8 parameters, which is greater than 7 authorized.(²ÅÓ7
-P	java:S1071"<Method has 8 parameters, which is greater than 7 authorized.(çÄû"
-Q	java:S1076"<Method has 8 parameters, which is greater than 7 authorized.(¥Á¥±
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8ÊİĞÒç1
+a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8ËİĞÒç1
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(´İ8ÌİĞÒç1
+Y
+java:S4973"<Strings and Boxed types should be compared using "equals()".(…‰¸ 8ÎİĞÒç1
+W	java:S107<"<Method has 8 parameters, which is greater than 7 authorized.(²ÅÓ78ÙİĞÒç1
+W	java:S107A"<Method has 8 parameters, which is greater than 7 authorized.(çÄû"8ÙİĞÒç1
+X	java:S107F"<Method has 8 parameters, which is greater than 7 authorized.(¥Á¥±8ÙİĞÒç1
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8²ğÕÒç1

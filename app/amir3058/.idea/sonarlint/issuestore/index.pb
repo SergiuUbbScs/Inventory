@@ -35,3 +35,5 @@ N
 src/main/java/module-info.java,1\c\1c89a5491fbfda3fb050196d6a239f20200296e7
 i
 9src/test/java/inventory/service/InventoryServiceTest.java,3\4\34ac316ed4f792bc79db6eea4325c9bc6d64247e
+j
+:src/test/java/inventory/model/InventoryRepositoryTest.java,b\b\bbb99bd3e0b1b8b40e8fb170e591f922212dba89

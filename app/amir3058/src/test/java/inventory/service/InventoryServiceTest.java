@@ -50,7 +50,7 @@ class InventoryServiceTest {
     @ValueSource(strings = { "parte", "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM" })
     @RepeatedTest(3)
     @Tag("ecp")
-    void TC1_ECP() {
+    void TC1_ECP() throws Exception {
         //arrange
         denumire="parte";
         pret=100;
@@ -136,7 +136,7 @@ class InventoryServiceTest {
     @Tag("bva")
     @Timeout(5)
     @DisplayName("Test 9 BVA")
-    void TC9_BVA() {
+    void TC9_BVA() throws Exception {
         //arrange
         denumire="M";
         pret=2;
