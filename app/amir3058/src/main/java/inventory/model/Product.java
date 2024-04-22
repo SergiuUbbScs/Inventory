@@ -8,7 +8,7 @@ import java.util.Objects;
 
 
 public class Product {
-    
+
     // Declare fields
     private ObservableList<Part> associatedParts;// = FXCollections.observableArrayList();
     private int productId;
@@ -28,7 +28,7 @@ public class Product {
         this.max = max;
         this.associatedParts= partList;
     }
-    
+
     // Getters
     public ObservableList<Part> getAssociatedParts() {
         return associatedParts;
@@ -57,7 +57,7 @@ public class Product {
     public int getMax() {
         return max;
     }
-    
+
     // Setters
     public void setAssociatedParts(ObservableList<Part> associatedParts) {
         associatedParts = associatedParts;
@@ -86,23 +86,23 @@ public class Product {
     public void setMax(int max) {
         this.max = max;
     }
-    
+
     // Other methods
     public void addAssociatedPart(Part part) {
         associatedParts.add(part);
     }
-    
+
     public void removeAssociatedPart(Part part) {
         associatedParts.remove(part);
     }
-    
+
     public Part lookupAssociatedPart(String searchItem) {
         for(Part p:associatedParts) {
             if(p.getName().contains(searchItem) || new Integer(p.getPartId()).toString().equals(searchItem)) return p;
         }
         return null;
     }
-    
+
     /**
      * Generate an error message for invalid values in a product
      * and evaluate whether the sum of the price of associated parts
@@ -115,7 +115,7 @@ public class Product {
      * @param price
      * @param parts
      * @param errorMessage
-     * @return 
+     * @return
      */
     public static String isValidProduct(String name, double price, int inStock, int min, int max, ObservableList<Part> parts, String errorMessage) {
         double sumOfParts = 0.00;
@@ -154,16 +154,6 @@ public class Product {
         return "P,"+this.productId+","+this.name+","+this.price+","+this.inStock+","+
                 this.min+","+this.max;
     }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return getProductId() == product.getProductId() && Double.compare(product.getPrice(), getPrice()) == 0 && getInStock() == product.getInStock() && getMin() == product.getMin() && getMax() == product.getMax() && Objects.equals(getAssociatedParts(), product.getAssociatedParts()) && Objects.equals(getName(), product.getName());
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getAssociatedParts(), getProductId(), getName(), getPrice(), getInStock(), getMin(), getMax());
-    }
+
 }

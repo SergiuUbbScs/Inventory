@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b418264-718c-42eb-a050-6a9499df391c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Docs/Lab02/Lab02_BBT_TCs_Form.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Docs/Lab02/Lab02_BBT_TCs_Form.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="9b418264-718c-42eb-a050-6a9499df391c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,21 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "E:/sem6/VVSS/labs/Inventory/app/coverage_report",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/sem6/VVSS/labs/Inventory/app/coverage_report&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\sem6\VVSS\labs\Inventory\app\amir3058" />
@@ -57,13 +55,19 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="inventory.model" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="inventory.model" />
       <recent name="inventory.service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="inventory.model" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.InventoryRepositoryTest">
-    <configuration name="InventoryRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InventoryServiceLab4Test">
+    <configuration name="InventoryLab4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="amir3058" />
       <extension name="coverage">
         <pattern>
@@ -72,61 +76,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="inventory.model" />
-      <option name="MAIN_CLASS_NAME" value="inventory.model.InventoryRepositoryTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="inventory.model.InventoryLab4Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryRepositoryTest.lookupProductEmptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InventoryRepositoryLab4IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="amir3058" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="inventory.model.*" />
+          <option name="PATTERN" value="inventory.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="inventory.model" />
-      <option name="MAIN_CLASS_NAME" value="inventory.model.InventoryRepositoryTest" />
-      <option name="METHOD_NAME" value="lookupProductEmptyList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InventoryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="amir3058" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="inventory.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="inventory.service" />
-      <option name="MAIN_CLASS_NAME" value="inventory.service.InventoryServiceTest" />
+      <option name="PACKAGE_NAME" value="inventory.repository" />
+      <option name="MAIN_CLASS_NAME" value="inventory.repository.InventoryRepositoryLab4IntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryServiceTest.TC2_ECP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InventoryRepositoryLab4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="amir3058" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="inventory.service.*" />
+          <option name="PATTERN" value="inventory.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="inventory.service" />
-      <option name="MAIN_CLASS_NAME" value="inventory.service.InventoryServiceTest" />
-      <option name="METHOD_NAME" value="TC2_ECP" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="inventory.repository" />
+      <option name="MAIN_CLASS_NAME" value="inventory.repository.InventoryRepositoryLab4Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryServiceTest.TC7_BVA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InventoryServiceLab4IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="amir3058" />
       <extension name="coverage">
         <pattern>
@@ -135,27 +121,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="inventory.service" />
-      <option name="MAIN_CLASS_NAME" value="inventory.service.InventoryServiceTest" />
-      <option name="METHOD_NAME" value="TC7_BVA" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="inventory.service.InventoryServiceLab4IntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceLab4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amir3058" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inventory.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="inventory.service" />
+      <option name="MAIN_CLASS_NAME" value="inventory.service.InventoryServiceLab4Test" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.InventoryRepositoryTest" />
-      <item itemvalue="JUnit.InventoryRepositoryTest.lookupProductEmptyList" />
-      <item itemvalue="JUnit.InventoryServiceTest" />
-      <item itemvalue="JUnit.InventoryServiceTest.TC2_ECP" />
-      <item itemvalue="JUnit.InventoryServiceTest.TC7_BVA" />
+      <item itemvalue="JUnit.InventoryLab4Test" />
+      <item itemvalue="JUnit.InventoryRepositoryLab4IntegrationTest" />
+      <item itemvalue="JUnit.InventoryRepositoryLab4Test" />
+      <item itemvalue="JUnit.InventoryServiceLab4IntegrationTest" />
+      <item itemvalue="JUnit.InventoryServiceLab4Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InventoryRepositoryTest" />
-        <item itemvalue="JUnit.InventoryRepositoryTest.lookupProductEmptyList" />
-        <item itemvalue="JUnit.InventoryServiceTest" />
-        <item itemvalue="JUnit.InventoryServiceTest.TC2_ECP" />
-        <item itemvalue="JUnit.InventoryServiceTest.TC7_BVA" />
+        <item itemvalue="JUnit.InventoryServiceLab4Test" />
+        <item itemvalue="JUnit.InventoryServiceLab4IntegrationTest" />
+        <item itemvalue="JUnit.InventoryRepositoryLab4Test" />
+        <item itemvalue="JUnit.InventoryRepositoryLab4IntegrationTest" />
+        <item itemvalue="JUnit.InventoryLab4Test" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +180,9 @@
       <workItem from="1711395202537" duration="1304000" />
       <workItem from="1711448091675" duration="2307000" />
       <workItem from="1712600278243" duration="3554000" />
+      <workItem from="1712653553791" duration="2537000" />
+      <workItem from="1713802533255" duration="2666000" />
+      <workItem from="1713809472394" duration="1072000" />
     </task>
     <servers />
   </component>

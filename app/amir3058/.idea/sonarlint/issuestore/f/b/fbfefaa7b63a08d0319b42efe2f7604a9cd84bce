@@ -1,11 +1,4 @@
 
-a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â∆·e8 ›–“Á1
-a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â∆·e8À›–“Á1
-b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ùù¥›8Ã›–“Á1
-Y
-java:S4973"<Strings and Boxed types should be compared using "equals()".(Öâ∏†8Œ›–“Á1
-W	java:S107<"<Method has 8 parameters, which is greater than 7 authorized.(≤≈”78Ÿ›–“Á1
-W	java:S107A"<Method has 8 parameters, which is greater than 7 authorized.(Áƒ˚"8Ÿ›–“Á1
-X	java:S107F"<Method has 8 parameters, which is greater than 7 authorized.(•¡•±8Ÿ›–“Á1
-K
-java:S1128".Remove this unused import 'java.util.Objects'.(º∏ıõ8≤’“Á1
+W	java:S107-"<Method has 8 parameters, which is greater than 7 authorized.(≤≈”78Ÿ›–“Á1
+W	java:S1072"<Method has 8 parameters, which is greater than 7 authorized.(Áƒ˚"8Ÿ›–“Á1
+X	java:S1077"<Method has 8 parameters, which is greater than 7 authorized.(•¡•±8Ÿ›–“Á1

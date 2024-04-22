@@ -1,6 +1,5 @@
 package inventory.model;
 
-
 public class InhousePart extends Part {
 
     // Declare fields
@@ -11,12 +10,12 @@ public class InhousePart extends Part {
         super(partId, name, price, inStock, min, max);
         this.machineId = machineId;
     }
-    
+
     // Getter
     public int getMachineId() {
         return machineId;
     }
-    
+
     // Setter
     public void setMachineId(int machineId) {
         this.machineId = machineId;

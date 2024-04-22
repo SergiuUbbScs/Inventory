@@ -11,7 +11,7 @@ public abstract class Part {
     private int inStock;
     private int min;
     private int max;
-    
+
     // Constructor
     public Part(int partId, String name, double price, int inStock, int min, int max) {
         this.partId = partId;
@@ -21,7 +21,7 @@ public abstract class Part {
         this.min = min;
         this.max = max;
     }
-    
+
     // Getters
     public int getPartId() {
         return partId;
@@ -46,7 +46,7 @@ public abstract class Part {
     public int getMax() {
         return max;
     }
-    
+
     // Setters
     public void setPartId(int partId) {
         this.partId = partId;
@@ -71,7 +71,7 @@ public abstract class Part {
     public void setMax(int max) {
         this.max = max;
     }
-    
+
     /**
      * Generate an error message for invalid values in a part
      * Valid part will return an empty string
@@ -81,7 +81,7 @@ public abstract class Part {
      * @param min
      * @param max
      * @param errorMessage
-     * @return 
+     * @return
      */
     public static String isValidPart(String name, double price, int inStock, int min, int max, String errorMessage) {
         if(name.equals("")) {

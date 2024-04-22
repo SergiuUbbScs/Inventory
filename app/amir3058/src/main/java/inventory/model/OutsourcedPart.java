@@ -2,9 +2,8 @@
 package inventory.model;
 
 
-
 public class OutsourcedPart extends Part {
-    
+
     // Declare fields
     private String companyName;
 
@@ -13,12 +12,12 @@ public class OutsourcedPart extends Part {
         super(partId, name, price, inStock, min, max);
         this.companyName = companyName;
     }
-    
+
     // Getter
     public String getCompanyName() {
         return companyName;
     }
-    
+
     // Setter
     public void setCompanyName(String companyName) {
         this.companyName = companyName;

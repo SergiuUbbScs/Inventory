@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class InventoryRepositoryTest {
+class InventoryLab3Test {
 
-    InventoryRepository repo;
-    InventoryRepository emptyListRepo;
+    Inventory repo;
+    Inventory emptyListRepo;
 
     Product prod;
     Product prod2;
@@ -16,7 +16,7 @@ public class InventoryRepositoryTest {
 
     @BeforeEach
     void setUp() {
-        repo = new InventoryRepository();
+        repo = new Inventory();
 
         prod = new Product(1, "nume_gasit", 1.0, 0, 0, 0, null);
         prod2 = new Product(2, "produs_second", 2.0, 0, 0, 0, null);
@@ -26,7 +26,7 @@ public class InventoryRepositoryTest {
         repo.addProduct(prod2);
         repo.addProduct(prod3);
 
-        emptyListRepo = new InventoryRepository();
+        emptyListRepo = new Inventory();
     }
 
     @Test

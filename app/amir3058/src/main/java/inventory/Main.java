@@ -1,6 +1,6 @@
 package inventory;
 
-import inventory.repository.InventoryReadWriteFromFileRepository;
+import inventory.repository.InventoryRepository;
 import inventory.service.InventoryService;
 import inventory.controller.MainScreenController;
 import javafx.application.Application;
@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        InventoryReadWriteFromFileRepository repo= new InventoryReadWriteFromFileRepository();
+        InventoryRepository repo= new InventoryRepository();
         InventoryService service = new InventoryService(repo);
         System.out.println(service.getAllProducts());
         System.out.println(service.getAllParts());

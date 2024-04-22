@@ -20,29 +20,21 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 
 public class AddProductController implements Initializable, Controller {
-    
+
     // Declare fields
-    private Logger logger;
     private Stage stage;
     private Parent scene;
-    private ObservableList<Part> addParts = FXCollections.observableArrayList();
-    private String errorMessage = "";
-
+    private ObservableList<Part> parts = FXCollections.observableArrayList();
+    private String errorMessage = new String();
     private InventoryService service;
-    
+
     @FXML
     private TextField minTxt;
 
     @FXML
     private TextField maxTxt;
-
-    @FXML
-    private TextField productIdTxt;
 
     @FXML
     private TextField nameTxt;
@@ -57,7 +49,7 @@ public class AddProductController implements Initializable, Controller {
     private TextField productSearchTxt;
 
     @FXML
-    private TableView<Part> addProductTableView;
+    private TableView<Part> productTableView;
 
     @FXML
     private TableColumn<Part, Integer> addProductIdCol;
@@ -86,11 +78,9 @@ public class AddProductController implements Initializable, Controller {
     @FXML
     private TableColumn<Part, Integer> deleteProductPriceCol;
 
-    public AddProductController(){}
-
     public void setService(InventoryService service){
         this.service=service;
-        addProductTableView.setItems(service.getAllParts());
+        productTableView.setItems(service.getAllParts());
     }
 
     /**
@@ -115,19 +105,20 @@ public class AddProductController implements Initializable, Controller {
     private void displayScene(ActionEvent event, String source) throws IOException {
         stage = (Stage)((Button)event.getSource()).getScene().getWindow();
         FXMLLoader loader= new FXMLLoader(getClass().getResource(source));
+        //scene = FXMLLoader.load(getClass().getResource(source));
         scene = loader.load();
         Controller ctrl=loader.getController();
         ctrl.setService(service);
         stage.setScene(new Scene(scene));
         stage.show();
     }
-    
+
     /**
      * Method to add values of addParts to the bottom table view of the scene.
      */
     public void updateDeleteProductTableView() {
-        deleteProductTableView.setItems(addParts);
-        
+        deleteProductTableView.setItems(parts);
+
         deleteProductIdCol.setCellValueFactory(new PropertyValueFactory<>("partId"));
         deleteProductNameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
         deleteProductInventoryCol.setCellValueFactory(new PropertyValueFactory<>("inStock"));
@@ -136,7 +127,7 @@ public class AddProductController implements Initializable, Controller {
 
     /**
      * Ask user for confirmation before deleting selected part from current product.
-     * @param event 
+     * @param event
      */
     @FXML
     void handleDeleteProduct(ActionEvent event) {
@@ -150,10 +141,10 @@ public class AddProductController implements Initializable, Controller {
         Optional<ButtonType> result = alert.showAndWait();
 
         if (result.get() == ButtonType.OK) {
-            logger.log(Level.INFO, "Part deleted.");
-            addParts.remove(part);
+            System.out.println("Part deleted.");
+            parts.remove(part);
         } else {
-            logger.log(Level.INFO, "Canceled part deletion.");
+            System.out.println("Canceled part deletion.");
         }
     }
 
@@ -171,25 +162,23 @@ public class AddProductController implements Initializable, Controller {
         alert.setHeaderText("Confirm Cancelation");
         alert.setContentText("Are you sure you want to cancel adding product?");
         Optional<ButtonType> result = alert.showAndWait();
-        if(result.isPresent()) {
-            if (result.get() == ButtonType.OK) {
-                logger.log(Level.INFO, "Ok selected. Product addition canceled.");
-                displayScene(event, "/fxml/MainScreen.fxml");
-            } else {
-                logger.log(Level.INFO, "Cancel clicked.");
-            }
+        if(result.get() == ButtonType.OK) {
+            System.out.println("Ok selected. Product addition canceled.");
+            displayScene(event, "/fxml/MainScreen.fxml");
+        } else {
+            System.out.println("Cancel clicked.");
         }
     }
-    
+
     /**
      * Add selected part from top table view to bottom table view in order to create
      * new product
-     * @param event 
+     * @param event
      */
     @FXML
     void handleAddProduct(ActionEvent event) {
-        Part part = addProductTableView.getSelectionModel().getSelectedItem();
-        addParts.add(part);
+        Part part = productTableView.getSelectionModel().getSelectedItem();
+        parts.add(part);
         updateDeleteProductTableView();
     }
 
@@ -207,9 +196,9 @@ public class AddProductController implements Initializable, Controller {
         String min = minTxt.getText();
         String max = maxTxt.getText();
         errorMessage = "";
-        
+
         try {
-            errorMessage = Product.isValidProduct(name, Double.parseDouble(price), Integer.parseInt(inStock), Integer.parseInt(min), Integer.parseInt(max), addParts, errorMessage);
+            errorMessage = Product.isValidProduct(name, Double.parseDouble(price), Integer.parseInt(inStock), Integer.parseInt(min), Integer.parseInt(max), parts, errorMessage);
             if(errorMessage.length() > 0) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Error Adding Part!");
@@ -217,11 +206,11 @@ public class AddProductController implements Initializable, Controller {
                 alert.setContentText(errorMessage);
                 alert.showAndWait();
             } else {
-                service.addProduct(name, Double.parseDouble(price), Integer.parseInt(inStock), Integer.parseInt(min), Integer.parseInt(max), addParts);
+                service.addProduct(name, Double.parseDouble(price), Integer.parseInt(inStock), Integer.parseInt(min), Integer.parseInt(max), parts);
                 displayScene(event, "/fxml/MainScreen.fxml");
             }
         } catch (NumberFormatException e) {
-            logger.log(Level.INFO, "Form contains blank field.");
+            System.out.println("Form contains blank field.");
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Error Adding Product!");
             alert.setHeaderText("Error!");
@@ -233,14 +222,14 @@ public class AddProductController implements Initializable, Controller {
 
     /**
      * Gets search text and inputs into lookupAssociatedPart method to highlight desired part
-     * @param event 
+     * @param event
      */
     @FXML
     void handleSearchProduct(ActionEvent event) {
         String x = productSearchTxt.getText();
-        addProductTableView.getSelectionModel().select(service.lookupPart(x));
+        productTableView.getSelectionModel().select(service.lookupPart(x));
     }
 
 
-    
+
 }

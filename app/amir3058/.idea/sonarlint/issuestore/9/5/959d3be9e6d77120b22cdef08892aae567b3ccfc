@@ -1,0 +1,13 @@
+
+:
+java:S1643š"Use a StringBuilder instead.(ŠÑ‡à8Ù™Ýµð1
+]
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(Êº‰o8”ÚÝµð1
+]	java:S125"<This block of commented-out lines of code should be removed.(§¨Ö¿úÿÿÿÿ8÷™Ýµð1
+a
+java:S2147,"DCombine this catch with the one at line 42, which has the same body.(ï­£Ä8ù™Ýµð1
+]	java:S125Q"<This block of commented-out lines of code should be removed.(§¨Ö¿úÿÿÿÿ8ÿ™Ýµð1
+a
+java:S2147a"DCombine this catch with the one at line 95, which has the same body.(ï­£Ä8ÿ™Ýµð1
+^	java:S125†"<This block of commented-out lines of code should be removed.(§¨Ö¿úÿÿÿÿ8ƒšÝµð1
+M	java:S106"+Replace this use of System.out by a logger.(Ñ£±Ôúÿÿÿÿ8„šÝµð1

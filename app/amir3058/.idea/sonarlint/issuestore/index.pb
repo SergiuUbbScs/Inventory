@@ -25,15 +25,15 @@ b
 2src/main/java/inventory/controller/Controller.java,a\6\a6635e298a8cf86a761fdee9b7ec350061490945
 l
 <src/main/java/inventory/controller/AddProductController.java,e\b\ebc32a263b34eeff26b01cbf68aed681310714be
-f
-6src/main/java/inventory/model/InventoryRepository.java,2\d\2dc9add8ec155a0d8f6fc8ec1239d0bdb1ee191d
-|
-Lsrc/main/java/inventory/repository/InventoryReadWriteFromFileRepository.java,f\b\fba674d050660a3e3adf9d76859eff8b775782cd
 e
 5src/main/java/inventory/service/InventoryService.java,f\b\fbfefaa7b63a08d0319b42efe2f7604a9cd84bce
 N
 src/main/java/module-info.java,1\c\1c89a5491fbfda3fb050196d6a239f20200296e7
 i
 9src/test/java/inventory/service/InventoryServiceTest.java,3\4\34ac316ed4f792bc79db6eea4325c9bc6d64247e
-j
-:src/test/java/inventory/model/InventoryRepositoryTest.java,b\b\bbb99bd3e0b1b8b40e8fb170e591f922212dba89
+\
+,src/main/java/inventory/model/Inventory.java,6\f\6f314193286495a02fb473e4cf32b85ed85f7dcf
+d
+4src/test/java/inventory/model/InventoryLab3Test.java,e\f\efa7386738dc87ae2ca6feb3c2c4bffc454c738d
+k
+;src/main/java/inventory/repository/InventoryRepository.java,9\5\959d3be9e6d77120b22cdef08892aae567b3ccfc
