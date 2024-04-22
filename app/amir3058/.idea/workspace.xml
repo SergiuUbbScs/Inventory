@@ -66,17 +66,17 @@
       <recent name="inventory.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InventoryServiceLab4Test">
-    <configuration name="InventoryLab4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AppTest">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="amir3058" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="inventory.model.*" />
+          <option name="PATTERN" value="inventory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="inventory.model" />
-      <option name="MAIN_CLASS_NAME" value="inventory.model.InventoryLab4Test" />
+      <option name="PACKAGE_NAME" value="inventory" />
+      <option name="MAIN_CLASS_NAME" value="inventory.AppTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,7 +143,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.InventoryLab4Test" />
+      <item itemvalue="JUnit.AppTest" />
       <item itemvalue="JUnit.InventoryRepositoryLab4IntegrationTest" />
       <item itemvalue="JUnit.InventoryRepositoryLab4Test" />
       <item itemvalue="JUnit.InventoryServiceLab4IntegrationTest" />
@@ -151,11 +151,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.InventoryServiceLab4Test" />
         <item itemvalue="JUnit.InventoryServiceLab4IntegrationTest" />
         <item itemvalue="JUnit.InventoryRepositoryLab4Test" />
         <item itemvalue="JUnit.InventoryRepositoryLab4IntegrationTest" />
-        <item itemvalue="JUnit.InventoryLab4Test" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +182,7 @@
       <workItem from="1712600278243" duration="3554000" />
       <workItem from="1712653553791" duration="2537000" />
       <workItem from="1713802533255" duration="2666000" />
-      <workItem from="1713809472394" duration="1072000" />
+      <workItem from="1713809472394" duration="1667000" />
     </task>
     <servers />
   </component>
